@@ -1,5 +1,6 @@
 //CHUCK GRANULATOR TUTORIAL -
 //MULTIPLE GRAINS
+//CODE: //https://github.com/elosine/chucK_granulator_tutorial
 
 100 => int grainDur;
 80 => int grainGap;

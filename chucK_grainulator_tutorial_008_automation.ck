@@ -122,9 +122,13 @@ while (true)
         
         //Choose panning
         Math.random2f( -1, 1 ) => float grainPan;
-        //0 => float grainPan; 
+        //0 => float grainPan;  
         
-        spork ~ grain( bufs[i], envs[i], newpos, grainDur, grainGain, grainPan );
+        //Playback Speed
+        Math.random2f( -2.0, 2.0 ) => float gRate;
+        //1 => float gRate; 
+        
+        spork ~ grain( bufs[i], envs[i], newpos, grainDur, grainGain, grainPan, gRate );
         
         grainGap::ms => now; //this is the space between grains
         
@@ -135,7 +139,7 @@ while (true)
 
 1::day => now;
 
-fun void grain( SndBuf buf, SndBuf envbuf, int pos, int gdur, float grainGain, float grainPan )
+fun void grain( SndBuf buf, SndBuf envbuf, int pos, int gdur, float grainGain, float grainPan, float grainRate )
 {  
     Gain g;
     g => Pan2 p => dac; //added panning ugen
@@ -146,7 +150,7 @@ fun void grain( SndBuf buf, SndBuf envbuf, int pos, int gdur, float grainGain, f
     grainGain => g.gain; //made gain a variable
     grainPan => p.pan; //for panning
     pos => buf.pos;
-    1 => buf.rate;
+    grainRate => buf.rate;
     1 => buf.loop;
     0 => envbuf.pos;
     (envbuf.length() / (ms*gdur)) => envbuf.rate; 

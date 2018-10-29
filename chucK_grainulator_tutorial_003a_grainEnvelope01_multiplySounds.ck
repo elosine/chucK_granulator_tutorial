@@ -1,5 +1,10 @@
 //CHUCK GRANULATOR TUTORIAL -
 //GRAIN ENVELOPES, PART 1: MULTIPLY SOUNDS
+//CODE: //https://github.com/elosine/chucK_granulator_tutorial
+
+//Gain ugen: http://chuck.cs.princeton.edu/doc/program/ugen_full.html#sndbuf
+// .op function for ugens: http://chuck.cs.princeton.edu/doc/language/ugen.html
+
 //An important consideration in granular synthesis
 //is how individual grains are enveloped
 //In this project we will be using small sound files

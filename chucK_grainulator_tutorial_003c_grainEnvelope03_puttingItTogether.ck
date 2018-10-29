@@ -1,5 +1,7 @@
 //CHUCK GRANULATOR TUTORIAL -
 //GRAIN ENVELOPES, PART 3: PUTTING IT TOGETHER
+//CODE: //https://github.com/elosine/chucK_granulator_tutorial
+
 //Here we will choose a source soundfile,
 //an envelope soundfile,
 //and multiple them together to create a sound grain

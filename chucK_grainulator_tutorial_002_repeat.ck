@@ -1,3 +1,6 @@
+//Code found here:
+//https://github.com/elosine/chucK_granulator_tutorial
+
 //Same as tutorial 001 but repeating a loop
 //sounding more like a granulator
 SndBuf buf;

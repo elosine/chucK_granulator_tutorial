@@ -1,5 +1,7 @@
 //CHUCK GRANULATOR TUTORIAL -
 //OVERLAPPING GRAINS
+//CODE: //https://github.com/elosine/chucK_granulator_tutorial
+
 //See: http://chuck.cs.princeton.edu/doc/language/spork.html100 => int maxGr;
 
 //To have overlapping grains,

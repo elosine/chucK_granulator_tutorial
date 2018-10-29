@@ -1,6 +1,7 @@
 //CHUCK GRANULATOR TUTORIAL -
 // GRAIN AS FUNCTION
 //See: http://chuck.cs.princeton.edu/doc/language/func.html
+//CODE: //https://github.com/elosine/chucK_granulator_tutorial
 
 
 SndBuf buf1;

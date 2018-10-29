@@ -1,6 +1,7 @@
 //CHUCK GRANULATOR TUTORIAL -
 //GRAIN ENVELOPES, PART 2: READ ENVELOPE BUFFER;
 //SET ENVELOPE DURATION
+//CODE: //https://github.com/elosine/chucK_granulator_tutorial
 
 //Read the envelope sound file just like any other sf.
 //(see part 1 of the tutorial)

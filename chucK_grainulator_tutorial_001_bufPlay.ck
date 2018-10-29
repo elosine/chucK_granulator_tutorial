@@ -1,5 +1,9 @@
+//Code found here:
+//https://github.com/elosine/chucK_granulator_tutorial
+
 //Declare a SndBuf Variable
-//See chucK reference: http://chuck.cs.princeton.edu/doc/program/ugen_full.html#sndbuf
+//See chucK reference: 
+//http://chuck.cs.princeton.edu/doc/program/ugen_full.html#sndbuf
 //Example: http://chuck.cs.princeton.edu/doc/examples/basic/sndbuf.ck
 SndBuf buf;
 //Read a soundfile into the buffer
@@ -10,7 +14,7 @@ buf => dac;
 //.pos setting initial read position in number of samples
 //.rate setting playback speed
 0 => buf.pos;
-1 => buf.rate;
+1.0 => buf.rate;
 //As with all things in chucK you need to advance time
 //In this case, the buffer is being played back for 200 milliseconds
 200::ms => now;  
