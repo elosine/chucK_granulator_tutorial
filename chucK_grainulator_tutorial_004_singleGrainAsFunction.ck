@@ -10,7 +10,7 @@ SndBuf envbuf1;
 "/Users/yangj14/Documents/GitHub/chucK_granulator_tutorial/grainEnv/gEnv_gauss.aif" => envbuf1.read;
 
 //Declare Function
-fun void grain( SndBuf buf, SndBuf envbuf, int pos, int gdur )
+fun void grain( SndBuf buf, SndBuf envbuf, int pos, float rate, int gdur )
 {  
     Gain g;
     1 => g.gain; //add a gain for use later
@@ -20,7 +20,7 @@ fun void grain( SndBuf buf, SndBuf envbuf, int pos, int gdur )
     3 => g.op;
      
     pos => buf.pos;
-    1 => buf.rate;
+    rate => buf.rate;
     1 => buf.loop;
     0 => envbuf.pos;
     (envbuf.length() / (ms*gdur)) => envbuf.rate; 

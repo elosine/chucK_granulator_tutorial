@@ -4,7 +4,6 @@
 100 => int maxGr; 
 SndBuf bufs[maxGr]; 
 SndBuf envs[maxGr]; 
-0 => int ix;
 
 string samples [4];
 "/Users/yangj14/Documents/GitHub/chucK_granulator_tutorial/samples/004_glassbreak.wav" => samples[0];
